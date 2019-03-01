@@ -1,3 +1,45 @@
-body {
-    background-color: blanchedalmond;
+html {
+    font-size: 62.5%;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    background-color:#FFF3CB;
+}
+
+.my-profile img{
+    width: 10rem;
+}
+
+.section-subtitle {
+    display: table;
+    background-color: #80817D;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+.section-subtitle > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section-subtitle img {
+    width: 3rem;
+    padding: 0;
+
+}
+.section-subtitle > span {
+    padding-left: 3rem;
+    color: #FFFFFF;
+}
+
+
+.link-github {
+ padding-left: 4rem;
+ text-decoration: none;
+ color: #d6ba3a
+}
+
+
