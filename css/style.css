@@ -9,6 +9,68 @@ body {
     background-color:#FFF3CB;
 }
 
+.page-header {
+    position: absolute;
+    padding: 2rem;
+    padding-top: 2.5rem; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-header.navigation-opened {
+    background-color: #FFFFFF;
+}
+
+.page-navigation .hamburger .close-icon {
+    display: none;
+}
+
+.page-header.navigation-opened .hamburger-icon {
+    display: none;
+}
+
+.page-header.navigation-opened .close-icon {
+    display: inline-block;
+}
+
+.page-navigation .navigation-menu{
+    display: none;
+}
+
+.navigation-opened .navigation-menu {
+    display: block;
+}
+
+.page-navigation .hamburger {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.page-navigation .hamburger svg {
+    width: 2.5rem;
+    height: auto;
+    fill: #000000;
+}
+
+
+
+.navigation-menu {
+    list-style: none;
+    text-decoration: none;
+    /*display: none;*/
+}
+
+.main {
+    padding-top: 10rem;
+}
+
 .my-profile img{
     width: 10rem;
 }
