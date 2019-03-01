@@ -10,22 +10,45 @@
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
         <a href="#" tytle="Start">
             Artur Kwiatkowski
         </a>
-        <nav>
-            <ul>
+        <nav class="page-navigation">
+            <ul class="navigation-menu">
                 <li> <a href="#" title="O mnie">O mnie</a> </li>
                 <li> <a href="#" title="Moje wykształcenie">Wykształcenie</a> </li>
                 <li> <a href="#" title="Moje doświadczenie zawodowe">Doświadczenie zawodowe</a> </li>
                 <li> <a href="#" title="Moje umiejętności"> Umiejętności</a> </li>
                 <li> <a href="#" title="Mój GitHub">GitHub</a> </li>
             </ul>
+            <button class="hamburger" type="button" title="rozwiń">
+                <svg class="hamburger-icon" 
+                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459px" height="459px"
+                    viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+                    <g>
+                        <g id="menu">
+                            <path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
+                        </g>
+                </svg>
+                <svg class="close-icon" 
+                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px"
+                    viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <g>
+                        <g id="cross">
+                            <g>
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397 
+				306,341.411 576.521,611.397 612,575.997 341.459,306.011 			" />
+                            </g>
+                        </g>
+                </svg>
+
+            </button>
         </nav>
-        <button type="button" title="rozwiń">x</button>
     </header>
-    <main>
+    <main class="main">
         <section>
 
         </section>
@@ -51,16 +74,17 @@
                 <span>Doświadczenie zawodowe</span>
             </div>
             <p>07.2018 – 09.2018 Żabka Polska – stażysta w zespole wsparcia IT</p>
-            <p>08.2017 Phoenix Contact  – praktyki w dziale IT  (programista .NET)</p>
-            <p>02.2014 – 03.2014 Międzynarodowe praktyki zawodowe odbyte w ramach projektu europejskiego w     Niemczech w placówce  „BBS1” (Europass Mobilität) </p>
+            <p>08.2017 Phoenix Contact – praktyki w dziale IT (programista .NET)</p>
+            <p>02.2014 – 03.2014 Międzynarodowe praktyki zawodowe odbyte w ramach projektu europejskiego w Niemczech w
+                placówce „BBS1” (Europass Mobilität) </p>
         </section>
         <section>
             <div class="section-subtitle"> <img src="./img/screwdriver-and-wrench-crossed.png" alt="">
                 <span>Umiejętności</span>
             </div>
-            <p>Technologie internetowe:  HTML, CSS, JavaScript, React</p>
-            <p>Języki obiektowe:    Java, C#</p>
-            <p>Znajomość:     C++, Python, SQL, terminal Linux, SCRUM, Gimp</p>
+            <p>Technologie internetowe: HTML, CSS, JavaScript, React</p>
+            <p>Języki obiektowe: Java, C#</p>
+            <p>Znajomość: C++, Python, SQL, terminal Linux, SCRUM, Gimp</p>
             <p>Diagnostyka i naprawa zestawu komputerowego, konfigurowanie sieci internetowej</p>
             <p>Angielski B2 </p>
             <p>Prawo jazdy kat. B</p>
@@ -69,11 +93,13 @@
         <section>
             <div class="section-subtitle"> <img src="./img/github-sign.png" alt="">
                 <span>GitHub:</span>
-                <a class="link-github" href="https://github.com/artkwi" title="Link do GitHub">https://github.com/artkwi</a>
+                <a class="link-github" href="https://github.com/artkwi"
+                    title="Link do GitHub">https://github.com/artkwi</a>
             </div>
         </section>
     </main>
 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
