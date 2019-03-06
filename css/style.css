@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    background-color:#fdf1babd;
+    background-color: #7d7d7d;
     font-family: 'Muli', sans-serif;
     /*background-image: url("../img/prism.png");*/
 }
@@ -44,6 +44,10 @@ body {
     display: block;
 }
 
+.page-navigation ul {
+    padding: 20px 0px 0px 0px;
+}
+
 .page-navigation .hamburger {
     position: absolute;
     right: 2rem;
@@ -78,28 +82,41 @@ body {
 .navigation-menu li a{
     text-decoration: none;
     color: #000000;
-    font-size: 2rem;
-    
+    font-size: 2rem; 
 }
 
-.main {
-    padding-top: 7rem;
+.navigation-menu .about-me-item {
+    background-color: #ff783b;
 }
+
+.navigation-menu .education-item {
+    background-color: #d2e1c8;
+}
+
+.navigation-menu .work-experience-item {
+    background-color: #fee4a6;
+}
+
+.navigation-menu .skills-item {
+    background-color: #f9c4aa;
+}
+
+.navigation-menu .github-item{
+    background-color: #424241;
+}
+
 
 main > section p {
     margin: 0rem;
     padding: 1.6rem;
+    line-height: 2.8rem;
 }
 
-.my-profile {
-    /*margin: 0 auto;*/
-    padding: 1rem;
-    
-
-}
 
 .my-profile img{
     width: 10rem;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
     -webkit-box-shadow: 0px 0px 53px 6px rgba(209,209,209,0.65);
 -moz-box-shadow: 0px 0px 53px 6px rgba(209,209,209,0.65);
 box-shadow: 0px 0px 53px 6px rgba(209,209,209,0.65);
@@ -107,20 +124,36 @@ box-shadow: 0px 0px 53px 6px rgba(209,209,209,0.65);
 
 main .education {
     min-height: 70rem;
+    background-color: #d2e1c8;
 }
 
 main .about-me-section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #182f5059;
-    margin-top: 0px;
+    background-color: #ff783b;
     min-height: 70rem;
+    padding-top: 6rem;
+}
+
+main .about-me-section .my-profile {
+    color: #ff783b;
+    padding: 1rem;
+    background-color: #ffffff;
+    font-size: 1.9rem;
+    text-decoration: overline;
+    letter-spacing: 0.3rem;
+}
+
+main .about-me-section .about-me-title {
+    padding-top: 1.6rem;
+    font-size: 4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 main .work-experience {
     padding-bottom: 5rem;
-    background-color: #182f5059;
+    background-color: #fee4a6;
     min-height: 70rem;
 }
 
@@ -128,16 +161,22 @@ main .skills {
     padding-bottom: 5rem;
     background-color: #d6ba3a;
     min-height: 70rem;
+    background-color: #f9c4aa;
+}
+
+main .github {
+    background-color: #424241;
 }
 
 section article p{
     display: inline-block;
+    text-align: center;
 }
 
 section article p:nth-child(2n-1) {
     display: block;
-    text-align: center;
     color: #182f5059;
+    padding-bottom: 0rem;
 
 }
 
@@ -146,11 +185,27 @@ section article p:nth-child(2n-1) {
     display: table;
     width: 100%;
     padding: 1rem;
+    margin: 0.6rem 1.2rem;
     box-sizing: border-box;
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 3px;
     
 }
+
+/*
+.section-subtitle::after {
+    content: " ";
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    background-color: #000000;
+    width: 60%;
+    height: 0.1rem;
+    left: 20%;
+    margin-top: 5px;
+    position: absolute;
+}
+*/
 
 .section-subtitle > * {
     display: inline-block;
@@ -163,7 +218,6 @@ section article p:nth-child(2n-1) {
 
 }
 .section-subtitle > span {
-    padding-left: 3rem;
     color: #FFFFFF;
     font-size: 2.4rem;
     font-weight: 700;
@@ -178,4 +232,6 @@ section article p:nth-child(2n-1) {
  color: #d6ba3a
 }
 
-
+.special-text {
+    font-weight: 700;
+}

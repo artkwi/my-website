@@ -13,16 +13,14 @@
 
 <body>
     <header class="page-header">
-        <a href="#" tytle="Start">
-            Artur Kwiatkowski
-        </a>
         <nav class="page-navigation">
             <ul class="navigation-menu">
-                <li> <a href="#" title="O mnie">O mnie</a> </li>
-                <li> <a href="#" title="Moje wykształcenie">Wykształcenie</a> </li>
-                <li> <a href="#" title="Moje doświadczenie zawodowe">Doświadczenie zawodowe</a> </li>
-                <li> <a href="#" title="Moje umiejętności"> Umiejętności</a> </li>
-                <li> <a href="#" title="Mój GitHub">GitHub</a> </li>
+                <li class="about-me-item"> <a href="#" title="O mnie">O mnie</a> </li>
+                <li class="education-item"> <a href="#" title="Moje wykształcenie">Wykształcenie</a> </li>
+                <li class="work-experience-item"> <a href="#" title="Moje doświadczenie zawodowe">Doświadczenie
+                        zawodowe</a> </li>
+                <li class="skills-item"> <a href="#" title="Moje umiejętności"> Umiejętności</a> </li>
+                <li class="github-item"> <a href="#" title="Mój GitHub">GitHub</a> </li>
             </ul>
             <button class="hamburger" type="button" title="rozwiń">
                 <svg class="hamburger-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -51,10 +49,16 @@
     <main class="main">
         <section class="about-me-section">
             <div class="my-profile">
-                <img src="./img/portret.jpg" alt="">
+                <img src="./img/portret-Artur.jpg" alt="">
                 <p>Artur Kwiatkowski</p>
             </div>
-            <p>Mój opis</p>
+            <div class="about-me-title"> O mnie</div>
+            <p>Nazywam się Artur Kwiatkowski i jestem świeżym inżynierem informatyki Uniwersytetu im. Adama Mickiewicza
+                w Poznaniu.
+                Swoją przyszłość wiążę z szeroko pojętym programowaniem.
+                W kwietniu 2019 roku przeprowadzam się do Krakowa. Tam zamierzam zacząć pracę związaną z tworzeniem
+                aplikacji internetowych badź w ogólności z programowaniem.
+                Nie chcę jednak zamykać się na inne horyzonty - praca powinna stale rozwijać i dawać przyjemność. </p>
         </section>
         <section class="education">
             <div class="section-subtitle"> <img src="./img/graduate-student-avatar.png" alt="">
@@ -63,12 +67,12 @@
             <article>
                 <p>10.2015 – 03.2019 </p>
                 <p> Uniwersytet im. Adama Mickiewicza w Poznaniu na Wydziale Matematyki i Informatyki -
-                    tytuł inżyniera </p>
+                    tytuł <b>inżyniera</b> </p>
                 <p>10.2017 – 03.2018 </p>
                 <p>Università della Calabria - studia z programu Erasmus+ we Włoszech </p>
                 <p>09.2011 – 04.2015 </p>
                 <p>Technikum informatyczne w Zespole Szkół nr 2 im. Stanisława Staszica w Nowym Tomyślu -
-                    tytuł technika informatyka oraz złotego absolwenta </p>
+                    tytuł <b>technika informatyka</b> oraz <b>złotego absolwenta </b></p>
             </article>
 
         </section>
@@ -76,27 +80,29 @@
             <div class="section-subtitle"> <img src="./img/portfolio.png" alt="">
                 <span>Doświadczenie zawodowe</span>
             </div>
-            <p>07.2018 – 09.2018</p>
-            </p> Żabka Polska – stażysta w zespole wsparcia IT</p>
-            <p>08.2017 </p>
-            </p>Phoenix Contact – praktyki w dziale IT (programista .NET)</p>
-            <p>02.2014 – 03.2014 </p>
-            </p>Międzynarodowe praktyki zawodowe odbyte w ramach projektu europejskiego w Niemczech w
-            placówce „BBS1” (Europass Mobilität) </p>
+            <article>
+                <p>07.2018 – 09.2018</p>
+                <p> Żabka Polska – stażysta w zespole wsparcia IT</p>
+                <p>08.2017 </p>
+                <p>Phoenix Contact – praktyki w dziale IT (programista .NET)</p>
+                <p>02.2014 – 03.2014 </p>
+                <p>Międzynarodowe praktyki zawodowe odbyte w ramach projektu europejskiego w Niemczech w
+                    placówce „BBS1” (Europass Mobilität) </p>
+            </article>
         </section>
         <section class="skills">
             <div class="section-subtitle"> <img src="./img/screwdriver-and-wrench-crossed.png" alt="">
                 <span>Umiejętności</span>
             </div>
-            <p>Technologie internetowe: HTML, CSS, JavaScript, React</p>
-            <p>Języki obiektowe: Java, C#</p>
-            <p>Znajomość: C++, Python, SQL, terminal Linux, SCRUM, Gimp</p>
-            <p>Diagnostyka i naprawa zestawu komputerowego, konfigurowanie sieci internetowej</p>
-            <p>Angielski B2 </p>
+            <p>Technologie internetowe: <span class="special-text">HTML, CSS, JavaScript, React</span></p>
+            <p>Języki obiektowe: <span class="special-text">Java, C#</span></p>
+            <p>Znajomość: <span class="special-text">C++, Python, SQL, terminal Linux, SCRUM, Gimp</span></p>
+            <p>Diagnostyka i naprawa zestawu komputerowego, konfigurowanie sieci internetowej</span></p>
+            <p>Angielski <span class="special-text">B2 </span></p>
             <p>Prawo jazdy kat. B</p>
             <p>Chęć rozwoju</p>
         </section>
-        <section>
+        <section class="github">
             <div class="section-subtitle"> <img src="./img/github-sign.png" alt="">
                 <span>GitHub:</span>
                 <a class="link-github" href="https://github.com/artkwi" title="Link do GitHub">www.github.com/artkwi</a>
