@@ -13,8 +13,8 @@ body {
 
 
 .page-header {
-    position: absolute;
-    padding-top: 2.5rem; 
+    position: fixed;
+    padding-top: 2.4rem; 
     width: 100%;
     box-sizing: border-box;
 }
