@@ -14,7 +14,6 @@ body {
 
 .page-header {
     position: absolute;
-    padding: 2rem;
     padding-top: 2.5rem; 
     width: 100%;
     box-sizing: border-box;
@@ -22,6 +21,10 @@ body {
 
 .page-header.navigation-opened {
     background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+     box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+    transition: background 0.3s;
 }
 
 .page-navigation .hamburger .close-icon {
@@ -48,6 +51,10 @@ body {
     padding: 20px 0px 0px 0px;
 }
 
+.page-navigation ul li a {
+    background-color: #ffffff12;
+}
+
 .page-navigation .hamburger {
     position: absolute;
     right: 2rem;
@@ -66,6 +73,10 @@ body {
     fill: #000000;
 }
 
+.page-navigation .hamburger .hamburger-icon {
+    fill: #FFFFFF
+}
+
 
 
 .navigation-menu {
@@ -77,6 +88,10 @@ body {
 
 .navigation-menu li {
     padding: 1rem;
+    -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+     box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+     
 }
 
 .navigation-menu li a{
@@ -205,6 +220,10 @@ section article p:nth-child(2n-1) {
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 3px;
     background-color: #000000;
+    -webkit-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+     box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+
     
 }
 
@@ -291,13 +310,10 @@ section article p:nth-child(2n-1) {
         width: 15%;
         color: #FFFFFF;
         border: 2px solid #585858;
-        -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
-        -moz-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
-        box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
     }
 
     .page-navigation .navigation-menu li:hover {
-        border: 2px solid #FFFFFF;
+        border: 2px solid #FFFFFFb1;
     }
 
     .page-navigation .navigation-menu li a {
@@ -312,10 +328,9 @@ section article p:nth-child(2n-1) {
         box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
     }
 
-    .section-subtitle {
-        -webkit-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
-        -moz-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
-        box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+    .my-profile img {
+        width: 20rem;
     }
+
 
 }
