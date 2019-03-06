@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
-    background-color: #7d7d7d;
+    background-color: #FFFFFF;
     font-family: 'Muli', sans-serif;
     /*background-image: url("../img/prism.png");*/
 }
@@ -109,11 +109,12 @@ body {
 main > section p {
     margin: 0rem;
     padding: 1.6rem;
-    line-height: 2.8rem;
+    line-height: 3.2rem;
 }
 
 
 .my-profile img{
+    margin: 2rem auto 1rem auto;;
     width: 10rem;
     border-radius: 50%;
     border: 2px solid #ffffff;
@@ -149,6 +150,8 @@ main .about-me-section .about-me-title {
     padding-top: 1.6rem;
     font-size: 4rem;
     font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 0.2rem;
+    color: #FFFFFF;
 }
 
 main .work-experience {
@@ -175,8 +178,9 @@ section article p{
 
 section article p:nth-child(2n-1) {
     display: block;
-    color: #182f5059;
+    color: #ff783b;
     padding-bottom: 0rem;
+    font-size: 1.4rem;
 
 }
 
@@ -220,18 +224,26 @@ section article p:nth-child(2n-1) {
 }
 .section-subtitle > span {
     color: #FFFFFF;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 700;
     width: 100%;
     text-align: center;
 }
 
 
-.link-github {
- padding-left: 4rem;
+.section-subtitle .link-github {
+ width: 100%;
+ text-align: center;
  text-decoration: none;
- color: #d6ba3a
+ color: #ffd309;
+ font-weight: 600;
+ font-size: 2rem;
 }
+
+.section-subtitle .link-github:hover {
+    color: #ffffff;
+    
+   }
 
 .special-text {
     font-weight: 700;
