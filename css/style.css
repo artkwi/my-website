@@ -265,12 +265,12 @@ section article p:nth-child(2n-1) {
     body {
         font-size: calc(1rem + 1vw);
         line-height: calc(3rem +1.5vw);
-        background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+        background-image: linear-gradient(to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
     }
 
     .page-header {
         position: static;
-        padding: 1.5rem 2%;
+        padding: 1.5rem 1%;
         
     }
     .page-header .page-navigation ul{
@@ -288,10 +288,12 @@ section article p:nth-child(2n-1) {
 
     .page-navigation .navigation-menu li {
         display: inline-block;
-        width: 16%;
+        width: 15%;
         color: #FFFFFF;
-        
         border: 2px solid #585858;
+        -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+        -moz-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+        box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
     }
 
     .page-navigation .navigation-menu li:hover {
@@ -302,5 +304,18 @@ section article p:nth-child(2n-1) {
         font-size: calc(1rem + 1vw);
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 600;
+        letter-spacing: 0.3vw;
     }
+    .main .about-me-section {
+        -webkit-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
+        -moz-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
+        box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
+    }
+
+    .section-subtitle {
+        -webkit-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+        box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
+    }
+
 }
