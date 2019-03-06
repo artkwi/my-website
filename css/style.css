@@ -76,13 +76,14 @@ body {
 }
 
 .navigation-menu li {
-    padding: 1rem 0rem;
+    padding: 1rem;
 }
 
 .navigation-menu li a{
     text-decoration: none;
     color: #000000;
     font-size: 2rem; 
+    display: block;
 }
 
 .navigation-menu .about-me-item {
@@ -146,6 +147,11 @@ main .about-me-section .my-profile {
     letter-spacing: 0.3rem;
 }
 
+main .about-me-section .about-me-description {
+    line-height: calc(3rem + 1vw);
+}
+
+
 main .about-me-section .about-me-title {
     padding-top: 1.6rem;
     font-size: 4rem;
@@ -171,9 +177,14 @@ main .github {
     background-color: #424241;
 }
 
+section article {
+    box-sizing: border-box;
+}
+
 section article p{
     display: inline-block;
     text-align: center;
+    width: calc(100% - 32px);
 }
 
 section article p:nth-child(2n-1) {
@@ -247,4 +258,49 @@ section article p:nth-child(2n-1) {
 
 .special-text {
     font-weight: 700;
+}
+
+
+@media (min-width: 40em) {
+    body {
+        font-size: calc(1rem + 1vw);
+        line-height: calc(3rem +1.5vw);
+        background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    }
+
+    .page-header {
+        position: static;
+        padding: 1.5rem 2%;
+        
+    }
+    .page-header .page-navigation ul{
+        padding: 0rem;
+    }
+
+    .page-header .hamburger{
+        display: none;
+    }
+
+
+    .page-navigation .navigation-menu {
+        display: block;
+    }
+
+    .page-navigation .navigation-menu li {
+        display: inline-block;
+        width: 16%;
+        color: #FFFFFF;
+        
+        border: 2px solid #585858;
+    }
+
+    .page-navigation .navigation-menu li:hover {
+        border: 2px solid #FFFFFF;
+    }
+
+    .page-navigation .navigation-menu li a {
+        font-size: calc(1rem + 1vw);
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 600;
+    }
 }
