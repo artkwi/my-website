@@ -54,6 +54,7 @@ body {
     padding-top: 2.4rem; 
     width: 100%;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .page-header.navigation-opened {
@@ -192,7 +193,7 @@ main .about-me-section {
 
 main .about-me-section .my-profile {
     color: #ff783b;
-    padding: 1rem;
+    padding: 1.1rem;
     background-color: #ffffff;
     font-size: 1.9rem;
     text-decoration: overline;
