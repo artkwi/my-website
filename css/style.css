@@ -11,6 +11,13 @@ body {
     /*background-image: url("../img/prism.png");*/
 }
 
+.progress-bar {
+    background-color: #000000;
+    width: 0;
+    height: 1vh;
+    position: fixed;
+    transition: 0.4s linear;
+}
 
 .page-header {
     position: fixed;
