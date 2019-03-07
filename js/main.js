@@ -17,14 +17,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// progress bar
+// four progress bars
 
-var progressbar = document.querySelector('.progress-bar');
+var progressbarHorizontal = document.querySelector('.progress-bar-horizontal');
+var progressbarHorizontal2 = document.querySelector('.progress-bar-horizontal-2');
+var progressbarVertical = document.querySelector('.progress-bar-vertical');
+var progressbarVertical2 = document.querySelector('.progress-bar-vertical-2');
 
 const statusBar = () => {
     var currentScroll = Math.round((window.scrollY) / (document.documentElement.offsetHeight -  window.innerHeight)* 100) ;
     console.log(currentScroll);
-    progressbar.style.width = currentScroll + '%';
+    progressbarHorizontal.style.width = currentScroll + '%';
+    progressbarHorizontal2.style.width = currentScroll + '%';
+    progressbarVertical.style.height = currentScroll + '%';
+    progressbarVertical2.style.height = currentScroll + '%';
+
 }
 
 window.addEventListener('scroll', statusBar);
