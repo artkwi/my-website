@@ -155,7 +155,7 @@ body {
     background-color: #f9c4aa;
 }
 
-.navigation-menu .github-item{
+.navigation-menu .contact-item{
     background-color: #424241;
 }
 
@@ -226,9 +226,6 @@ main .skills {
     background-color: #f9c4aa;
 }
 
-main .github {
-    background-color: #424241;
-}
 
 section article {
     box-sizing: border-box;
@@ -297,21 +294,6 @@ section article p:nth-child(2n-1) {
     width: 100%;
     text-align: center;
 }
-
-
-.section-subtitle .link-github {
- width: 100%;
- text-align: center;
- text-decoration: none;
- color: #ffd309;
- font-weight: 600;
- font-size: 2rem;
-}
-
-.section-subtitle .link-github:hover {
-    color: #ffffff;
-    
-   }
 
 .special-text {
     font-weight: 700;
