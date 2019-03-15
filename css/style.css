@@ -334,11 +334,12 @@ main .contact .contact-icons-bar {
  main .contact .contact-icons-bar svg {
     width: 4rem;
     height: 4rem;
-    fill: #d0d0d0;
+    fill: #828282;
 }
 
 main .contact .contact-icons-bar svg:hover {
     fill: #FFFFFF;
+    transition: fill 0.1s linear;
 }
 
 
