@@ -35,5 +35,17 @@ const statusBar = () => {
 
 window.addEventListener('scroll', statusBar);
 
+// stick desktop navigation
+const stickNavigation = () => {
+    var currentScroll = Math.round((window.scrollY) / (document.documentElement.offsetHeight -  window.innerHeight)* 100);
+    if(currentScroll == 0) {
+        document.querySelector('.page-header .page-navigation ul').classList.add('sticked-header');
+    } else if (currentScroll > 0) {
+        document.querySelector('.page-header .page-navigation ul').classList.remove('sticked-header');
+    }
+}
+
+window.addEventListener('scroll', stickNavigation) ;
+
 // Animations
 ScrollReveal().reveal('section > *', {delay: 200, duration: 1200,  origin: 'left', distance: '100%'});
