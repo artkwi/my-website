@@ -85,12 +85,12 @@ body {
     display: block;
 }
 
-.page-navigation ul {
-    padding: 20px 0px 0px 0px;
+.page-navigation {
+    overflow: hidden;
 }
 
-.page-navigation ul li a {
-    background-color: #ffffff12;
+.page-navigation ul {
+    padding: 20px 0px 0px 0px;
 }
 
 .page-navigation .hamburger {
@@ -125,22 +125,22 @@ body {
 }
 
 .navigation-menu li {
-    padding: 1rem;
-    -webkit-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
-    -moz-box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
-     box-shadow: inset 0px 0px 11px 1px rgba(0,0,0,0.55);
+    padding: 1rem;   
+    -webkit-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
+    -moz-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
+    box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
      
 }
 
 .navigation-menu li a{
     text-decoration: none;
-    color: #000000;
+    color: #383c40;
     font-size: 2rem; 
     display: block;
 }
 
 .navigation-menu .about-me-item {
-    background-color: #ff783b;
+    background-color: #96bcd6;
 }
 
 .navigation-menu .education-item {
@@ -156,7 +156,7 @@ body {
 }
 
 .navigation-menu .contact-item{
-    background-color: #424241;
+    background-color: #b3b3b3;
 }
 
 
@@ -186,16 +186,16 @@ main .about-me-section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #ff783b;
+    background-color: #96bcd6;
     min-height: 70rem;
     padding-top: 6rem;
 }
 
 main .about-me-section .my-profile {
-    color: #ff783b;
+    color: #96bcd6;
     padding: 1.1rem;
     background-color: #ffffff;
-    font-size: 1.9rem;
+    font-size: calc(1.9rem + 1vw);
     text-decoration: overline;
     letter-spacing: 0.3rem;
 }
@@ -262,21 +262,6 @@ section article p:nth-child(2n-1) {
     
 }
 
-/*
-.section-subtitle::after {
-    content: " ";
-    display: block;
-    text-align: center;
-    font-size: 4rem;
-    background-color: #000000;
-    width: 60%;
-    height: 0.1rem;
-    left: 20%;
-    margin-top: 5px;
-    position: absolute;
-}
-*/
-
 .section-subtitle > * {
     display: inline-block;
     vertical-align: middle;
@@ -305,7 +290,7 @@ main .contact {
 }
 
 main .contact .contact-icons-bar {
-    padding: 5rem; 
+    padding: 4rem; 
     display: grid;
     grid-template-columns: repeat(4, 8rem);
     justify-items: center;
@@ -329,16 +314,21 @@ main .contact .contact-icons-bar svg:hover {
     body {
         font-size: calc(1rem + 1vw);
         line-height: calc(3rem +1.5vw);
-        background-image: linear-gradient(to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+        /*background-image: linear-gradient(to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);*/
     }
 
     .page-header {
         position: static;
-        padding: 1.5rem 1%;
+        padding: 0;
         
     }
     .page-header .page-navigation ul{
         padding: 0rem;
+        display: grid;
+        grid-template-columns: repeat(5, 19.7vw);
+        justify-items: center;
+        justify-content: space-around;
+        margin: auto;
     }
 
     .page-header .hamburger{
@@ -352,21 +342,57 @@ main .contact .contact-icons-bar svg:hover {
 
     .page-navigation .navigation-menu li {
         display: inline-block;
-        width: 15%;
-        color: #FFFFFF;
-        border: 2px solid #585858;
-    }
-
-    .page-navigation .navigation-menu li:hover {
-        border: 2px solid #FFFFFFb1;
+        width: 100%;
+        /* border-radius: 30px; */
+        transition: background-color 0.3s;
+        box-sizing: border-box
     }
 
     .page-navigation .navigation-menu li a {
         font-size: calc(1rem + 1vw);
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0.3vw;
     }
+
+    .navigation-menu .about-me-item {
+        background-color: #96bcd65e;
+    }
+    
+    .navigation-menu .education-item {
+        background-color: #d2e1c85e;
+    }
+    
+    .navigation-menu .work-experience-item {
+        background-color: #fee4a65e;
+    }
+    
+    .navigation-menu .skills-item {
+        background-color: #f9c4aa5e;
+    }
+    
+    .navigation-menu .contact-item{
+        background-color: #b3b3b35e;
+    }
+
+    .navigation-menu .about-me-item:hover {
+        background-color: #96bcd6;
+    }
+    
+    .navigation-menu .education-item:hover {
+        background-color: #d2e1c8;
+    }
+    
+    .navigation-menu .work-experience-item:hover {
+        background-color: #fee4a6;
+    }
+    
+    .navigation-menu .skills-item:hover {
+        background-color: #f9c4aa;
+    }
+    
+    .navigation-menu .contact-item:hover{
+        background-color: #b3b3b3;
+    }
+    
+
     .main .about-me-section {
         -webkit-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
         -moz-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
