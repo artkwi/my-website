@@ -224,8 +224,8 @@ main .skills {
     background-color: #d6ba3a;
     min-height: 70rem;
     background-color: #f9c4aa;
+    text-align: center;
 }
-
 
 section article {
     box-sizing: border-box;
@@ -239,10 +239,8 @@ section article p{
 
 section article p:nth-child(2n-1) {
     display: block;
-    color: #ff783b;
+    color: #4f6d82;
     padding-bottom: 0rem;
-    font-size: 1.4rem;
-
 }
 
 
@@ -281,8 +279,12 @@ section article p:nth-child(2n-1) {
 }
 
 .special-text {
-    font-weight: 700;
+    font-weight: 400;
 }
+/* 
+.special-text::after {
+    content: "<h1>asd</h1>";
+} */
 
 main .contact {
     
