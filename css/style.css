@@ -18,6 +18,7 @@ body {
     height: 2px;;
     position: fixed;
     transition: 0.4s linear;
+    z-index: 20;
 }
 
 .progress-bar-horizontal-2 {
@@ -28,6 +29,7 @@ body {
     height: 2px;;
     position: fixed;
     transition: 0.4s linear;
+    z-index: 20;
 }
 
 .progress-bar-vertical {
@@ -37,6 +39,7 @@ body {
     height: 0;
     position: fixed;
     transition: 0.4s linear;
+    z-index: 20;
 }
 
 .progress-bar-vertical-2 {
@@ -47,6 +50,7 @@ body {
     height: 0;
     position: fixed;
     transition: 0.4s linear;
+    z-index: 20;
 }
 
 .page-header {
@@ -333,7 +337,7 @@ main .contact .contact-icons-bar svg:hover {
     .page-header .page-navigation ul{
         padding: 0rem;
         display: grid;
-        grid-template-columns: repeat(5, 19.7vw);
+        grid-template-columns: repeat(5, 19.9vw);
         justify-items: center;
         justify-content: space-around;
         margin: auto;
@@ -411,6 +415,7 @@ main .contact .contact-icons-bar svg:hover {
         -webkit-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
         -moz-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
         box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
+        padding-top: 4rem;
     }
 
     .my-profile img {
