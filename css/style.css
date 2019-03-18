@@ -57,6 +57,17 @@ body {
     z-index: 10;
 }
 
+.pl-language, .eng-language{
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    left: 4%;
+}
+
+.eng-language {
+    display: inline-block;
+}
+
 .page-header.navigation-opened {
     background-color: #ffffff59;
     -webkit-box-shadow: 0px 6px 17px -2px rgba(0,0,0,0.5);
@@ -77,6 +88,15 @@ body {
     display: inline-block;
 }
 
+.page-header.navigation-opened .eng-language{
+    display: inline-block;
+
+}
+
+.page-header.navigation-opened > a img {
+    height: 5rem;
+}
+
 .page-navigation .navigation-menu{
     display: none;
 }
@@ -91,6 +111,10 @@ body {
 
 .page-navigation ul {
     padding: 20px 0px 0px 0px;
+}
+
+.page-navigation ul .eng-language{
+    display: none;
 }
 
 .page-navigation .hamburger {
@@ -126,9 +150,9 @@ body {
 
 .navigation-menu li {
     padding: 1rem;   
-    -webkit-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
+    /*-webkit-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
     -moz-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
-    box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);
+    box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.55);*/
      
 }
 

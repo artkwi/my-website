@@ -22,9 +22,9 @@ var language = {
         skills2: "Object-oriented programming:",
         skills3: "Familiary with:",
         skills4: "English",
-        skills5: "Knowledge of construction and diagnostics of computer equipment", 
+        skills5: "Knowledge of construction and diagnostics of computer equipment",
         skills6: "Driving license B category"
-        
+
     },
     pl: {
         welcome: "Witaj!",
@@ -47,7 +47,7 @@ var language = {
         skills4: "Angielski:",
         skills5: "Diagnostyka i naprawa zestawu komputerowego, konfigurowanie sieci internetowej",
         skills6: "Prawo jazdy kat. B"
-        
+
     }
 
 };
@@ -69,21 +69,38 @@ if (window.location.hash) {
         $("#experience1").text(language.eng.experience1);
         $("#experience2").text(language.eng.experience2);
         $("#experience3").text(language.eng.experience3);
-        
+
         $("#skills1").text(language.eng.skills1);
         $("#skills2").text(language.eng.skills2);
         $("#skills3").text(language.eng.skills3);
         $("#skills4").text(language.eng.skills4);
         $("#skills5").text(language.eng.skills5);
         $("#skills6").text(language.eng.skills6);
-        
 
     }
 }
 
 // reload site on click
 dataReload.forEach(reloader => {
-    reloader.addEventListener('click', function() {
+    reloader.addEventListener('click', function () {
         location.reload(true);
     })
 });
+
+
+// switch language on flag click
+const switchLanguageVisible = () => {
+    if (document.querySelector(".pl-language")) {
+        if (window.location.hash === "#eng") {
+            document.querySelector(".pl-language").style.display = 'inline-block';
+            document.querySelector(".eng-language").style.display = 'none';
+        } else {
+            if (document.querySelector(".eng-language").style.display !== 'inline-block') {
+                document.querySelector(".pl-language").style.display = 'none';
+                document.querySelector(".eng-language").style.display = 'inline-block';
+            }
+        }
+    }
+};
+
+switchLanguageVisible();
