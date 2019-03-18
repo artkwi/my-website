@@ -9,7 +9,22 @@ var language = {
         education: "Education",
         experience: "Experience",
         skills: "Skills",
-        contact: "Contact"
+        contact: "Contact",
+        education1: "Adam Mickiewicz University in Poznań - IT Engineer at Faculty of Mathematics and Computer Science - Bachelor of Engineering degree2",
+        education2: "Università della Calabria - Erasmus+ exchange programme in Italy",
+        education3: "Stanisław Staszic secondary technical school of information technology in Nowy Tomyśl - IT Technician degree and Gold Student honour",
+
+        experience1: "Internship in Żabka Polska - first line of support",
+        experience2: "Internship in Phoenix Contact - .NET programmer",
+        experience3: "Europass Mobility international intership of information technology in „BBS1” in German",
+
+        skills1: "Internet technology:",
+        skills2: "Object-oriented programming:",
+        skills3: "Familiary with:",
+        skills4: "English",
+        skills5: "Knowledge of construction and diagnostics of computer equipment", 
+        skills6: "Driving license B category"
+        
     },
     pl: {
         welcome: "Witaj!",
@@ -17,7 +32,22 @@ var language = {
         education: "Wykształcenie",
         experience: "Doświadczenie",
         skills: "Umiejętności",
-        contact: "Kontakt"
+        contact: "Kontakt",
+        education1: "Uniwersytet im. Adama Mickiewicza w Poznaniu na Wydziale Matematyki i Informatyki - tytuł inżyniera1",
+        education2: "Università della Calabria - studia z programu Erasmus+ we Włoszech",
+        education3: "Technikum informatyczne w Zespole Szkół nr 2 im. Stanisława Staszica w Nowym Tomyślu - tytuł technika informatyka oraz złotego absolwenta",
+
+        experience1: "Żabka Polska – stażysta w zespole wsparcia IT",
+        experience2: "Phoenix Contact – praktyki w dziale IT (programista .NET)",
+        experience3: "Międzynarodowe praktyki zawodowe odbyte w ramach projektu europejskiego w Niemczech w placówce „BBS1” (Europass Mobilität)",
+
+        skills1: "Technologie internetowe:",
+        skills2: "Programowanie obiektowe:",
+        skills3: "Znajomość:",
+        skills4: "Angielski:",
+        skills5: "Diagnostyka i naprawa zestawu komputerowego, konfigurowanie sieci internetowej",
+        skills6: "Prawo jazdy kat. B"
+        
     }
 
 };
@@ -31,6 +61,23 @@ if (window.location.hash) {
         $("#work-experience-item, #work-experience-title").text(language.eng.experience);
         $("#skills-item, #skills-title").text(language.eng.skills);
         $("#contact-item, #contact-title").text(language.eng.contact);
+
+        $("#education1").text(language.eng.education1);
+        $("#education2").text(language.eng.education2);
+        $("#education3").text(language.eng.education3);
+
+        $("#experience1").text(language.eng.experience1);
+        $("#experience2").text(language.eng.experience2);
+        $("#experience3").text(language.eng.experience3);
+        
+        $("#skills1").text(language.eng.skills1);
+        $("#skills2").text(language.eng.skills2);
+        $("#skills3").text(language.eng.skills3);
+        $("#skills4").text(language.eng.skills4);
+        $("#skills5").text(language.eng.skills5);
+        $("#skills6").text(language.eng.skills6);
+        
+
     }
 }
 
