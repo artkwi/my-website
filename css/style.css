@@ -426,5 +426,50 @@ main .contact .contact-icons-bar svg:hover {
         height: 6rem;
     }
 
+    main .contact a {      
+    text-decoration: none;
+    color: #828282;
+    font-size: 2.5rem;
+    font-weight: 700; 
+    }
+
+    main .contact .cv-container {
+        position: relative;
+        overflow: auto;
+        width: 18rem;
+        text-align: center;
+    }
+    main .contact .cv-container .cv-pl {
+        position: absolute;
+        display: none;
+    }
+
+    main .contact .cv-container:hover .cv-pl {
+        position: absolute;
+        display: initial;
+        overflow: visible;
+        left: 1.5rem;
+        bottom: 1rem;
+    }
+
+    main .contact .cv-container:hover .cv-pl:hover {
+        color: #FFFFFF;
+    }
+
+    main .contact .cv-container .cv-eng {
+        position: absolute;
+        right: 1rem;
+        display: none;
+    }
+
+    main .contact .cv-container:hover .cv-eng {
+        position: absolute;
+        display: initial;
+        overflow: visible;
+    }
+
+    main .contact .cv-container:hover .cv-eng:hover {
+        color: #FFFFFF;
+    }
 
 }
