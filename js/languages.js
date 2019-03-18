@@ -4,10 +4,12 @@ var dataReload = document.querySelectorAll('[data-reload]');
 // Language dictionary 
 var language = {
     eng: {
-        welcome: "Hello!"
+        welcome: "Hello!",
+        aboutMe: "About me"
     },
     pl: {
-        welcome: "Witaj!"
+        welcome: "Witaj!",
+        aboutMe: "O mnie"
     }
 
 };
@@ -15,7 +17,8 @@ var language = {
 // Define site language via window hash
 if (window.location.hash) {
     if (window.location.hash === "#eng") {
-        hi.textContent = language.eng.welcome;
+        $("#hi").text(language.eng.welcome);
+        $("#about-me-item").text(language.eng.aboutMe);
     }
 }
 
