@@ -6,7 +6,8 @@ hamburger.addEventListener('click', function() {
 }, false);
 
 // smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// excluding language anchors
+document.querySelectorAll('a[href^="#"]:not([href="#eng"]):not([href="#pl"])').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
