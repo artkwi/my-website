@@ -342,6 +342,10 @@ main .contact .contact-icons-bar svg:hover {
     transition: fill 0.1s linear;
 }
 
+main .contact .cv-container .cv-pl, .cv-eng {
+    display: none;
+}
+
 
 @media (min-width: 40em) {
     body {
