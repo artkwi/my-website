@@ -6,6 +6,7 @@ var language = {
     eng: {
         welcome: "Hello!",
         aboutMe: "About me",
+        aboutMeDescription: "My name is Artur Kwiatkowski. I have just graduated Computer Science at Adam Mickiewicz University in Poznań. I am going to move to Kraków in April 2019. I would like to start working there in the programming area. Currently I am developing myself in creating web applications and websites. I am open for a new challanges in IT field - work should improve our skills and give joy.",
         education: "Education",
         experience: "Experience",
         skills: "Skills",
@@ -21,7 +22,7 @@ var language = {
         skills1: "Internet technology:",
         skills2: "Object-oriented programming:",
         skills3: "Familiary with:",
-        skills4: "English",
+        skills4: "English:",
         skills5: "Knowledge of construction and diagnostics of computer equipment",
         skills6: "Driving license B category"
 
@@ -29,6 +30,7 @@ var language = {
     pl: {
         welcome: "Witaj!",
         aboutMe: "O mnie",
+        aboutMeDescription: "Nazywam się Artur Kwiatkowski. Jestem świeżo upieczonym inżynierem informatyki Uniwersytetu im. Adama Mickiewicza w Poznaniu. W kwietniu 2019 roku przeprowadzam się do Krakowa. Tam zamierzam zacząć pracę związaną z programowaniem. Obecnie rozwijam się w kierunku tworzenia aplikacji i stron internetowych. Nie zamykam się jednak na inne horyzonty w dziedzinie IT - praca powinna stale rozwijać i dawać przyjemność. ",
         education: "Wykształcenie",
         experience: "Doświadczenie",
         skills: "Umiejętności",
@@ -57,6 +59,7 @@ if (window.location.hash) {
     if (window.location.hash === "#eng") {
         $("#hi").text(language.eng.welcome);
         $("#about-me-item, .about-me-title").text(language.eng.aboutMe);
+        $(".about-me-description").text(language.eng.aboutMeDescription);
         $("#education-item, #education-title").text(language.eng.education);
         $("#work-experience-item, #work-experience-title").text(language.eng.experience);
         $("#skills-item, #skills-title").text(language.eng.skills);
