@@ -60,8 +60,15 @@ body {
 .pl-language, .eng-language{
     display: none;
     position: absolute;
-    top: 0.5rem;
-    left: 4%;
+    top: 1.4rem;
+    left: 2rem;
+}
+
+
+.pl-language img, .eng-language img{
+    height: 4rem;
+    border-radius: 10px;
+    opacity: 0.8;
 }
 
 .eng-language {
@@ -187,7 +194,7 @@ body {
 main > section p {
     margin: 0rem;
     padding: 1.6rem;
-    line-height: 3.2rem;
+    line-height: 3.1rem;
 }
 
 
@@ -354,10 +361,28 @@ main .contact .contact-icons-bar svg:hover {
         transition: background 0.3s linear;
         
     }
+
+
+    .pl-language, .eng-language{
+        display: none;
+        position: absolute;
+        top: calc(4rem + 1vw);
+        right: 2rem;
+        left: auto;
+    }
+    
+    
+    .pl-language img, .eng-language img{
+        height: 4rem;
+        border-radius: 10px;
+        opacity: 0.8;
+        z-index: 200;
+    }
+
     .page-header .page-navigation ul{
         padding: 0rem;
         display: grid;
-        grid-template-columns: repeat(5, 19.7vw);
+        grid-template-columns: repeat(5, 20vw);
         justify-items: center;
         justify-content: space-around;
         margin: auto;
@@ -432,6 +457,7 @@ main .contact .contact-icons-bar svg:hover {
     
 
     .main .about-me-section {
+        padding-top: 11rem;
         -webkit-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
         -moz-box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
         box-shadow: inset 0px 33px 47px -28px rgba(0,0,0,0.55);
