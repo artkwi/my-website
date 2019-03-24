@@ -87,7 +87,7 @@ if (window.location.hash) {
 dataReload.forEach(reloader => {
     reloader.addEventListener('click', function () {
         setTimeout("location.reload(true)", 50);
-    })
+    }, false)
 });
 
 
